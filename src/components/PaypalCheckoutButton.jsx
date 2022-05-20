@@ -16,7 +16,6 @@ const PaypalCheckoutButton = ({ cart }) => {
       purchase_units: cart.map(item => ({
         description: item.description,
         amount: {
-          currency_code: 'MXN',
           value: item.price
         }
       }))
